@@ -1,0 +1,1 @@
+La jugada fue:  [1, 1, 1, 4]  ha ganado;La jugada fue:  [3, 1, 1, 1]  ha ganado;La jugada fue:  [3, 2, 2, 2]  ha ganado;La jugada fue:  [3, 4, 2, 2]  ha ganado;La jugada fue:  [3, 4, 2, 2]  ha ganado;La jugada fue:  [3, 4, 2, 2]  ha ganado;La jugada fue:  [3, 4, 2, 2]  ha ganado;La jugada fue:  [3,2,1,3]  ha perdido;
