@@ -22,7 +22,7 @@ public class VentanaAdminPrincipal extends JFrame {
 
 		setResizable(false);
 		setLocationRelativeTo(null);
-		setVisible(false);
+		setVisible(true);
 	}
 
 	public void inicializarComponentes() {

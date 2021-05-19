@@ -11,8 +11,8 @@ import co.edu.unbosque.persistence.OperacionArchivo;
 import co.edu.unbosque.view.VentanaAdminEliminar;
 import co.edu.unbosque.view.VentanaAdminEstadisticas;
 import co.edu.unbosque.view.VentanaAdminPrincipal;
-import co.edu.unbosque.view.VentanaAdminTop;
 import co.edu.unbosque.view.VentanaInicioSesion;
+import co.edu.unbosque.view.VentanaAdminTop;
 import co.edu.unbosque.view.VentanaInscripcionHombres;
 import co.edu.unbosque.view.VentanaInscripcionMujer;
 import co.edu.unbosque.view.VentanaOpciones;
@@ -22,8 +22,8 @@ public class Controller implements ActionListener {
 	private VentanaAdminPrincipal vadprincipal ;
 	private VentanaAdminEliminar vadeliminar;
 	private VentanaAdminEstadisticas vadestadisticas;
-	private VentanaAdminTop vadtop;
-	private VentanaInicioSesion viniciosesion;
+	private VentanaInicioSesion vadtop;
+	private VentanaAdminTop viniciosesion;
 	private VentanaInscripcionHombres vinscripsionhombres;
 	private VentanaInscripcionMujer vinscripsionmujer;
 	private VentanaPerfil vperfil;
@@ -35,8 +35,8 @@ public class Controller implements ActionListener {
 		vadprincipal = new VentanaAdminPrincipal();
 		vadeliminar = new VentanaAdminEliminar();
 		vadestadisticas = new VentanaAdminEstadisticas();
-		vadtop = new VentanaAdminTop();
-		viniciosesion = new VentanaInicioSesion();
+		vadtop = new VentanaInicioSesion();
+		viniciosesion = new VentanaAdminTop();
 		vinscripsionhombres = new VentanaInscripcionHombres();
 		vinscripsionmujer = new VentanaInscripcionMujer() ;
 		vperfil = new VentanaPerfil();
@@ -63,10 +63,10 @@ public class Controller implements ActionListener {
 		vadestadisticas.getEstadisticas().getB_buscar().addActionListener(this);
 		vadestadisticas.getEstadisticas().getB_generar() .addActionListener(this);
 		
-		vadtop.getAdmintop().getB_vertop().addActionListener(this);
-		vadtop.getAdmintop().getB_volveradmin().addActionListener(this);
+		//vadtop.getAdmintop().getB_vertop().addActionListener(this);
+		//vadtop.getAdmintop().getB_volveradmin().addActionListener(this);
 		
-		viniciosesion.getPinicioSesion().getB_iniciar().addActionListener(this);
+		//viniciosesion.getPinicioSesion().getB_iniciar().addActionListener(this);
 		
 		vinscripsionhombres.getPhombres().getB_verificar().addActionListener(this);
 		vinscripsionhombres.getPhombres().getBr_Disponible().addActionListener(this);

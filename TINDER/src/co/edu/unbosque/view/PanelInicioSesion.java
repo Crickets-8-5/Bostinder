@@ -1,63 +1,49 @@
 package co.edu.unbosque.view;
 
-
 import java.awt.Color;
 import java.awt.Font;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextArea;
 import javax.swing.border.LineBorder;
-
 
 public class PanelInicioSesion extends JPanel {
 
-	private JTextArea jusuario;
-	private JLabel e_titulo,e_usuario,e_contraseña;
-	private JPasswordField jpcontrseña; 
-	private JButton b_iniciar;
+	private JLabel e_titulo;
+	private JButton b_admin, b_registrar, b_inisesion;
+	
 
 	public PanelInicioSesion() {
-
 		setLayout(null);
 		inicializarComponentes();
 	}
 
 	public void inicializarComponentes() {
-		
-		e_titulo = new JLabel("	Inicio sesion");
-		e_titulo.setForeground(Color.cyan);
-		e_titulo.setFont(new Font("Algerian", 20, 40));
-		e_titulo.setBounds(180, 110, 264, 45);
+		setBackground(new Color(222, 222, 222));
+		setBorder(new LineBorder(new Color(190, 255, 237)));
+
+		e_titulo = new JLabel("Iniciar Sesion");
+		e_titulo.setForeground(Color.WHITE);
+		e_titulo.setFont(new Font("Algerian", 20, 35));
+		e_titulo.setBounds(120, 60, 264, 45);
 		add(e_titulo);
-		
-		jusuario = new JTextArea("");
-		jusuario.setBounds(10, 60, 510, 250);
-		jusuario.setBorder(new LineBorder(null));
-		jusuario.setEditable(false);
-		add(jusuario);
-		
-		jpcontrseña = new JPasswordField();
-		jpcontrseña.setBounds(10, 60, 510, 250);
-		jpcontrseña.setBorder(new LineBorder(null));
-		jpcontrseña.setEditable(false);
-		add(jpcontrseña);
-		
-		b_iniciar = new JButton("VOLVER");
-		b_iniciar.setBounds(443, 5, 120, 30);
-		b_iniciar.setActionCommand("VOLVER");
-		add(b_iniciar);
 
+		b_inisesion = new JButton("Iniciar Sesion");
+		buttons(b_inisesion, "INISESION", 160, 130, 155, 30);
+		
+		b_registrar = new JButton("Registrarse");
+		buttons(b_registrar, "REGISTRAR", 160, 170, 155, 30);
+		
+		b_admin = new JButton("Admin");
+		buttons(b_admin, "INIADMIN", 160, 210, 155, 30);
 	}
-
-	public JTextArea getJusuario() {
-		return jusuario;
-	}
-
-	public void setJusuario(JTextArea jusuario) {
-		this.jusuario = jusuario;
+	
+	private void buttons(JButton button, String action,int x, int y, int w, int h) {
+		button.setActionCommand(action);
+		button.setBounds(x, y, w, h);
+		button.setBackground(Color.lightGray);
+		add(button);
 	}
 
 	public JLabel getE_titulo() {
@@ -68,36 +54,28 @@ public class PanelInicioSesion extends JPanel {
 		this.e_titulo = e_titulo;
 	}
 
-	public JLabel getE_usuario() {
-		return e_usuario;
+	public JButton getB_admin() {
+		return b_admin;
 	}
 
-	public void setE_usuario(JLabel e_usuario) {
-		this.e_usuario = e_usuario;
+	public void setB_admin(JButton b_admin) {
+		this.b_admin = b_admin;
 	}
 
-	public JLabel getE_contraseña() {
-		return e_contraseña;
+	public JButton getB_registrar() {
+		return b_registrar;
 	}
 
-	public void setE_contraseña(JLabel e_contraseña) {
-		this.e_contraseña = e_contraseña;
+	public void setB_registrar(JButton b_registrar) {
+		this.b_registrar = b_registrar;
 	}
 
-	public JPasswordField getJpcontrseña() {
-		return jpcontrseña;
+	public JButton getB_inisesion() {
+		return b_inisesion;
 	}
 
-	public void setJpcontrseña(JPasswordField jpcontrseña) {
-		this.jpcontrseña = jpcontrseña;
+	public void setB_inisesion(JButton b_inisesion) {
+		this.b_inisesion = b_inisesion;
 	}
-
-	public JButton getB_iniciar() {
-		return b_iniciar;
-	}
-
-	public void setB_iniciar(JButton b_iniciar) {
-		this.b_iniciar = b_iniciar;
-	}
-
+	
 }

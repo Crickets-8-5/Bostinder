@@ -1,45 +1,44 @@
 package co.edu.unbosque.view;
 
+
+import java.awt.BorderLayout;
 import java.awt.Color;
-
 import javax.swing.JFrame;
-import javax.swing.JLayeredPane;
 
-public class VentanaAdminTop extends JFrame {
+public class VentanaAdminTop extends JFrame{
 
-	private PanelAdminTop admintop;
-
-
+	private PanelAdminTop pinicioSesion;
+	
 	public VentanaAdminTop() {
-
-		setTitle("Menú Principal");
-		setSize(500, 400);
+		
+		setTitle("Top 10");
+		setSize(550, 400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
-		getContentPane().setBackground(Color.darkGray);
-
+		getContentPane().setBackground(Color.lightGray);
+		
 		inicializarComponentes();
-
+		
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(true);
+		
 	}
-
+	
 	public void inicializarComponentes() {
-
-		admintop = new PanelAdminTop();
-		admintop.setBounds(5, 5, 475, 350);
-		admintop.setOpaque(false);
-		getContentPane().add(admintop);	
+		
+		pinicioSesion = new PanelAdminTop();
+		pinicioSesion.setBounds(5, 5, 525,350);
+		add(pinicioSesion,BorderLayout.NORTH);
+		
 	}
 
-	public PanelAdminTop getAdmintop() {
-		return admintop;
+	public PanelAdminTop getPinicioSesion() {
+		return pinicioSesion;
 	}
 
-	public void setAdmintop(PanelAdminTop admintop) {
-		this.admintop = admintop;
+	public void setPinicioSesion(PanelAdminTop pinicioSesion) {
+		this.pinicioSesion = pinicioSesion;
 	}
-
 	
 }

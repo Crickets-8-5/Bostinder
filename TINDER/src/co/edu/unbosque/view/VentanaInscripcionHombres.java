@@ -21,7 +21,7 @@ public class VentanaInscripcionHombres extends JFrame {
 		inicializarComponentes();
 		setResizable(false);
 		setLocationRelativeTo(null);
-		setVisible(true);	
+		setVisible(true);
 	}
 	
 	private void inicializarComponentes() {

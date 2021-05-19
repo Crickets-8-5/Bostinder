@@ -21,7 +21,8 @@ public class VentanaPerfil extends JFrame {
 		inicializarComponentes();
 		setResizable(false);
 		setLocationRelativeTo(null);
-		setVisible(true);	
+		//setVisible(true);	
+		setVisible(false);
 	}
 	
 	private void inicializarComponentes() {

@@ -24,8 +24,9 @@ public class PanelMujeres extends JPanel {
 
 	public PanelMujeres() {
 
-		inicializarComponentes();
 		setLayout(null);
+		inicializarComponentes();
+		
 
 	}
 

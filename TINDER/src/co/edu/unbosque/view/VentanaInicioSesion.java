@@ -1,45 +1,42 @@
 package co.edu.unbosque.view;
 
-
-import java.awt.BorderLayout;
 import java.awt.Color;
+
 import javax.swing.JFrame;
+import javax.swing.JLayeredPane;
 
-public class VentanaInicioSesion extends JFrame{
+public class VentanaInicioSesion extends JFrame {
 
-	private PanelInicioSesion pinicioSesion;
-	
+	private PanelInicioSesion admintop;
+
+
 	public VentanaInicioSesion() {
-		
-		setTitle("INICIAR SESION");
-		setSize(550, 400);
+		setTitle("Inicio Sesion");
+		setSize(500, 400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
-		getContentPane().setBackground(Color.lightGray);
-		
+		getContentPane().setBackground(Color.darkGray);
 		inicializarComponentes();
-		
+
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(true);
-		
 	}
-	
+
 	public void inicializarComponentes() {
-		
-		pinicioSesion = new PanelInicioSesion();
-		pinicioSesion.setBounds(5, 5, 525,350);
-		
-	add(pinicioSesion,BorderLayout.NORTH);
-		
+		admintop = new PanelInicioSesion();
+		admintop.setBounds(5, 5, 475, 350);
+		admintop.setOpaque(false);
+		getContentPane().add(admintop);	
 	}
 
-	public PanelInicioSesion getPinicioSesion() {
-		return pinicioSesion;
+	public PanelInicioSesion getAdmintop() {
+		return admintop;
 	}
 
-	public void setPinicioSesion(PanelInicioSesion pinicioSesion) {
-		this.pinicioSesion = pinicioSesion;
+	public void setAdmintop(PanelInicioSesion admintop) {
+		this.admintop = admintop;
 	}
+
 	
 }

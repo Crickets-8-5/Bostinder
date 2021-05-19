@@ -22,9 +22,10 @@ public class PanelHombres extends JPanel {
 	
 
 	public PanelHombres() {
-
-		inicializarComponentes();
 		setLayout(null);
+		inicializarComponentes();
+		
+		
 	}
 
 	public void inicializarComponentes() {
